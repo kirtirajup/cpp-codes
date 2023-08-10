@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+void math(int num){
+	cout<<endl<<"Square of the number : "<<num*num;
+	cout<<endl<<"Cube of the number : "<<num*num*num;
+}
+
+int main(){
+	cout<<"Enter a number to find it's SQUARE and CUBE :  ";
+	int num;
+	cin>>num;
+	
+	math(num);
+}

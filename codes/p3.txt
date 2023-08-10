@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class Math{
+	public :
+		int hcf(int a,int b){
+			int take = (a>b)? a : b;
+			int total = 1;
+			for(int i=1;i<=take;i++){
+				for(int i=1;i<=take;i++){
+					if(a%i==0 && b%i==0){
+					total *= i;
+					a/=i;
+					b/=i;
+				}
+			}
+	}
+	return (total*a*b);
+		}
+};
+
+int main(){
+	int a,b;
+	cout<<"Enter 2 numbers : ";
+	cin>>a>>b;
+		class Math ob;
+		int c = ob.hcf(a,b);
+	cout<<"Lcm = "<<c;
+}
+
+//	4 	8
+//2	2 	4
+//2	1 	02

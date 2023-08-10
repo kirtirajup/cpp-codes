@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int pro=1,sop=0;
+	cout<<"Enter the limit for the sequence : ";
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+		if(i==n){
+			cout<<i<<"! ";
+		} else{
+			cout<<i<<"! + ";
+		}
+		pro = 1;
+		for(int a = 1; a<=i; a++){
+			pro *=a;
+			
+		}
+		sop += pro;
+	}
+	cout<<" = "<<sop;
+}
