@@ -7,16 +7,14 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.allCenter{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 }
-.nav{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.heading{
+    text-decoration: underline blue wavy;
 }
 button{
     margin: 10px;
@@ -28,26 +26,26 @@ button{
     width:150px;
     border-radius: 4px;
 }
-.contents{
-    display:flex;
-    justify-content:center;
-    align-self: center;
-    flex-wrap:wrap;
-}
 .contents div{
     margin:30px 3px;
     border:2px solid blue;
     border-radius:5px;
     padding:14px;
+    background:radial-gradient( rgb(131, 6, 163),blue);
+    color:white;
 }
-#whatsapp1{
-    position:sticky;
-    top:0;
-    height:60px;
+#whatsapp{
+    position:fixed;
+    height:50px;
+    border-radius: 5px;
 }
-
 #dark{
     background-color: white;
     color:black;
-    border:1px solid black;
+    border: 1px solid;
+    position:fixed;
+    top:60px;
+    margin:1px 0;
+    height:50px;
+    width:50px;
 }
