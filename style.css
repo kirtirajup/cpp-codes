@@ -31,7 +31,7 @@ button{
     border:2px solid blue;
     border-radius:5px;
     padding:14px;
-    background:radial-gradient( rgb(131, 6, 163),blue);
+    background:radial-gradient( rgb(220, 80, 255),blue);
     color:white;
 }
 #whatsapp{
